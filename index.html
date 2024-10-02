@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label for="name">
+             Name of The applicant:
+        </label>
+        <input id="name" type="text" name="fname" required><br>
+        <label for="lname">Last name:</label>
+        <input id="lname" type="text"><br>
+        <label for="mobile">Enter contact Number:</label>
+       <input id="mobile" type="tel" minlength="10" maxlength="15" pattern="{1,10}" required><br>
+       <label for="email">E-mail:</label>
+       <input id="email" type="email" pattern="[a-z 0-9 ._%+-]+@[a-z 0-9 .-]+\.[a-z]{2,}$"><br>
+       <span>Gender:</spanp> 
+       <input id="gender" type="radio" name="gender"><label for="gender">Female</label>
+       <input id="gender" type="radio" name="gender"> <label for="gender">Male</label><br>
+       <label for="course">Choose Your course:</label>
+       <select name="group" id="course">
+        <optgroup label="course">
+            <option value="M.P.C">M.P.C</option>
+            <option value="M.S.Cs">M.S.Cs</option>
+            <option value="M.P.Cs">M.P.Cs</option>
+            <option value="M.E.CS">M.E.CS</option>
+            <option value="M.Cs.Mm">M.Cs.Mm</option>
+            <option value="M.E.Cs">M.E.Cs</option>
+            <option value="M.Cc.Cs">M.Cc.Cs</option>
+            <option value="M.P.E">M.P.E</option>
+            <option value="">M.P.E</option>
+
+        </optgroup>
+       </select><br>
+       <input type="file"><br>
+       <label for="range">range  of your communication skills:</label>
+       <input id="range" type="range"><br>
+       <input type="submit">
+    </form>
+</body>
+</html>
